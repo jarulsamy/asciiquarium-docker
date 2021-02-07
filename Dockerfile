@@ -12,7 +12,10 @@ RUN apt-get update && apt-get install -y \
 
 FROM perl:5-slim
 
-COPY --from=BUILDER /usr/local/lib/perl5 /usr/local/lib/perl5
+LABEL name="asciiquarium"
+LABEL maintainer="jarulsamy"
+LABEL version="1.0.0"
+
 COPY --from=BUILDER /src /src
 
 WORKDIR /src
