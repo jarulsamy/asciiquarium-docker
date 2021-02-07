@@ -12,7 +12,7 @@ wonderful terminal graphic!
 ## Usage
 
 > Note, this container must **always** run interactively, otherwise it will
-> immediately exit without.
+> immediately exit.
 
 ### Options 1: Pulling
 
@@ -20,7 +20,7 @@ The latest version should be available on Docker hub, so running it is as simple
 as:
 
 ```
-$ docker run -it jarulsamy/asciiquarium
+$ docker run --rm -it jarulsamy/asciiquarium:latest
 ```
 
 ### Option 2: Building
@@ -41,5 +41,5 @@ $ docker build . -t asciiquarium
 Run it:
 
 ```
-$ docker run -it asciiquarium
+$ docker run --rm -it asciiquarium
 ```
