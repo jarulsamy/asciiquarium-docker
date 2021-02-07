@@ -41,5 +41,5 @@ $ docker build . -t asciiquarium
 Run it:
 
 ```
-$ docker run asciiquarium
+$ docker run -it asciiquarium
 ```
